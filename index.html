@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yun-Ho Han | Humanoid Robotics Researcher</title>
+  <meta name="description" content="Yun-Ho Han's personal academic homepage. Humanoid robot design, legged locomotion, differential mechanisms, model-based control, and reinforcement learning-based walking control." />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="#home">Yun-Ho Han</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <div class="nav-links">
+        <a href="#about" data-i18n="nav_about">About</a>
+        <a href="#research" data-i18n="nav_research">Research</a>
+        <a href="#projects" data-i18n="nav_projects">Projects</a>
+        <a href="#publications" data-i18n="nav_publications">Publications</a>
+        <a href="#demos" data-i18n="nav_demos">Demos</a>
+        <a href="#cv" data-i18n="nav_cv">CV</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+      </div>
+      <div class="language-switch" aria-label="Language switch">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="ko">KR</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-content">
+        <p class="eyebrow" data-i18n="hero_eyebrow">Humanoid Robotics Researcher</p>
+        <h1>Yun-Ho Han</h1>
+        <p class="subtitle" data-i18n="hero_subtitle">
+          Ph.D. Candidate, Department of Mechanical System Engineering, Kookmin University
+        </p>
+        <p class="hero-text" data-i18n="hero_text">
+          My research focuses on humanoid robot design, legged locomotion, differential transmission mechanisms, model-based walking control, and reinforcement learning-based walking control for real-world bipedal robots.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="documents/Yunho_Han_CV_EN_v1_0.pdf" target="_blank" rel="noopener" data-i18n="btn_cv">View CV</a>
+          <a class="button" href="https://scholar.google.com/citations?user=bfGxfZUAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+          <a class="button" href="https://github.com/YunhoHan" target="_blank" rel="noopener">GitHub</a>
+          <a class="button" href="https://www.linkedin.com/in/yunho-han-4357352a2" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="about_eyebrow">About</p>
+        <h2 data-i18n="about_title">From RoK-3 to RoK-4 humanoid robotics</h2>
+      </div>
+      <div class="two-column">
+        <p data-i18n="about_p1">
+          I have worked on humanoid robot platforms from RoK-3 to RoK-4, covering mechanical design, model-based walking control using WBC and MPC, dynamic motion planning, and mechanism-aware reinforcement learning.
+        </p>
+        <p data-i18n="about_p2">
+          My recent research focuses on RoK-4, a humanoid robot equipped with the ADAPT Hip Pitch–Knee differential mechanism, and reinforcement learning-based walking control validated through real-world experiments and full-mechanism simulation.
+        </p>
+      </div>
+    </section>
+
+    <section id="research" class="section alt">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="research_eyebrow">Research</p>
+        <h2 data-i18n="research_title">Research Interests</h2>
+      </div>
+      <div class="tag-grid">
+        <span data-i18n="ri_1">Humanoid robot design</span>
+        <span data-i18n="ri_2">Legged locomotion</span>
+        <span data-i18n="ri_3">Differential transmission mechanisms</span>
+        <span data-i18n="ri_4">Whole-body control and MPC</span>
+        <span data-i18n="ri_5">Reinforcement learning-based walking</span>
+        <span data-i18n="ri_6">Mechanism-aware reinforcement learning</span>
+        <span data-i18n="ri_7">Sim-to-real and sim-to-sim validation</span>
+        <span data-i18n="ri_8">Kinodynamic motion planning</span>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="projects_eyebrow">Projects</p>
+        <h2 data-i18n="projects_title">Selected Research Projects</h2>
+      </div>
+
+      <div class="card-grid">
+        <article class="card">
+          <h3>RoK-4 Humanoid Robot</h3>
+          <p data-i18n="project_rok4">A humanoid robot platform for high-performance bipedal locomotion using a Hip Pitch–Knee differential leg mechanism.</p>
+        </article>
+        <article class="card">
+          <h3>ADAPT Differential Mechanism</h3>
+          <p data-i18n="project_adapt">An Advanced Differential and Agile Parallel Transmission mechanism for humanoid robot legs, coupling actuator inputs with Hip Pitch and Knee outputs.</p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="project_rl_title">Mechanism-Aware RL Walking</h3>
+          <p data-i18n="project_rl">A PPO-based walking controller using mechanism-aware observations, actions, and actuator–joint mapping.</p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="project_model_title">Model-Based Humanoid Walking</h3>
+          <p data-i18n="project_model">Whole-body control, model predictive control, and torque-control-based walking for humanoid robots.</p>
+        </article>
+        <article class="card">
+          <h3>RoK-3 Humanoid Robot</h3>
+          <p data-i18n="project_rok3">Early humanoid walking experiments, foot mechanism design, variable stiffness sole, and slope walking research.</p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="project_jump_title">Single-Leg Jumping Motion Planning</h3>
+          <p data-i18n="project_jump">Dynamic motion planning for agile legged motion using nonlinear trajectory optimization and kinodynamic planning.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="publications" class="section alt">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="pub_eyebrow">Publications</p>
+        <h2 data-i18n="pub_title">Selected Publications</h2>
+      </div>
+      <ol class="publication-list">
+        <li>
+          <strong>Yun-Ho Han</strong>, Min-Ho Park, and Baek-Kyu Cho,
+          “ADAPT: Advanced Differential and Agile Parallel Transmission Mechanism for High-Performance Humanoid Robots,”
+          <em>IEEE Robotics and Automation Letters</em>, 2026.
+        </li>
+        <li>
+          Junyeon Namgung, <strong>Yun-Ho Han</strong>, and Baek-Kyu Cho,
+          “A Variable Stiffness Sole for Biped Robot and Its Experimental Verification,”
+          <em>ASME Journal of Mechanisms and Robotics</em>, 2024.
+        </li>
+        <li>
+          <strong>Yun-Ho Han</strong> and Baek-Kyu Cho,
+          “Slope Walking of Humanoid Robot without IMU Sensor on an Unknown Slope,”
+          <em>Robotics and Autonomous Systems</em>, 2022.
+        </li>
+        <li>
+          <strong>Yun-Ho Han</strong> and Baek-Kyu Cho,
+          “Implementing Torque Control-Based Biped Walking of Humanoid Robots with High Reduction Gear and No Joint Torque Feedback,”
+          <em>IEEE-RAS International Conference on Humanoid Robots</em>, 2023.
+        </li>
+      </ol>
+      <p class="note">
+        <a href="https://scholar.google.com/citations?user=bfGxfZUAAAAJ" target="_blank" rel="noopener" data-i18n="pub_more">Full publication list on Google Scholar</a>
+      </p>
+    </section>
+
+    <section id="demos" class="section">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="demos_eyebrow">Videos</p>
+        <h2 data-i18n="demos_title">Videos and Demonstrations</h2>
+      </div>
+      <div class="demo-list">
+        <span data-i18n="demo_1">RoK-3 humanoid walking</span>
+        <span data-i18n="demo_2">RoK-4 real-world walking</span>
+        <span data-i18n="demo_3">RoK-4 full-mechanism MuJoCo simulation</span>
+        <span data-i18n="demo_4">ADAPT differential mechanism demonstration</span>
+        <span data-i18n="demo_5">Reinforcement learning-based humanoid walking</span>
+        <span data-i18n="demo_6">Single-leg jumping motion generation</span>
+      </div>
+      <p class="muted" data-i18n="demos_note">Videos and images will be added later.</p>
+    </section>
+
+    <section id="cv" class="section alt">
+      <div class="section-heading">
+        <p class="eyebrow">CV</p>
+        <h2 data-i18n="cv_title">Curriculum Vitae</h2>
+      </div>
+      <p data-i18n="cv_text">
+        A PDF version of my CV is available below. A Korean CV will be added later.
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="documents/Yunho_Han_CV_EN_v1_0.pdf" target="_blank" rel="noopener" data-i18n="cv_pdf">English CV PDF</a>
+        <a class="button" href="cv.html" target="_blank" rel="noopener" data-i18n="cv_html">HTML CV</a>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="contact_eyebrow">Contact</p>
+        <h2 data-i18n="contact_title">Get in touch</h2>
+      </div>
+      <div class="contact-grid">
+        <a href="mailto:93yunho@gmail.com">93yunho@gmail.com</a>
+        <a href="mailto:93yunho@kookmin.ac.kr">93yunho@kookmin.ac.kr</a>
+        <a href="https://github.com/YunhoHan" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/yunho-han-4357352a2" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=bfGxfZUAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Yun-Ho Han. Built with GitHub Pages.</p>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>

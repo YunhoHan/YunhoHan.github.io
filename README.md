@@ -45,7 +45,7 @@ RoK-3 Humanoid Robot
 Current version:
 
 ```text
-Homepage version: v1.1
+Homepage version: v1.2
 CV version: English CV v1.0
 ```
 
@@ -57,6 +57,7 @@ Implemented:
 * HTML CV page
 * Research sections from RoK-3 to RoK-4
 * Structured selected publications section grouped by journal and conference papers
+* DOI buttons for selected homepage publications with confirmed DOI links
 * Selected research projects section
 * Videos and demonstrations placeholder card section
 * CV availability status labels
@@ -77,6 +78,10 @@ To be added later:
 Update notes:
 
 ```text
+v1.2
+- Added DOI buttons to selected homepage publications with confirmed DOI links.
+- Added the IROS 2022 DOI to the HTML CV publication entry.
+
 v1.1
 - Added `.nojekyll` to match the documented GitHub Pages structure.
 - Grouped homepage publications into Journal Papers and Conference Papers.
@@ -199,6 +204,8 @@ Shows selected publications grouped into:
 * Conference Papers
 
 Also links to the full publication list on Google Scholar.
+
+DOI buttons are shown for selected publications where DOI links are confirmed in the CV.
 
 ### Videos / Demos
 
@@ -485,7 +492,7 @@ Recommended demo items:
 * Mechanism-aware reinforcement learning walking
 * Single-leg jumping motion
 
-### 3. Add Publication Action Buttons
+### 3. Add Additional Publication Action Buttons
 
 The homepage publications section is already grouped by:
 

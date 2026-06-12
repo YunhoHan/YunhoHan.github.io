@@ -119,28 +119,49 @@
         <p class="eyebrow" data-i18n="pub_eyebrow">Publications</p>
         <h2 data-i18n="pub_title">Selected Publications</h2>
       </div>
-      <ol class="publication-list">
-        <li>
-          <strong>Yun-Ho Han</strong>, Min-Ho Park, and Baek-Kyu Cho,
-          “ADAPT: Advanced Differential and Agile Parallel Transmission Mechanism for High-Performance Humanoid Robots,”
-          <em>IEEE Robotics and Automation Letters</em>, 2026.
-        </li>
-        <li>
-          Junyeon Namgung, <strong>Yun-Ho Han</strong>, and Baek-Kyu Cho,
-          “A Variable Stiffness Sole for Biped Robot and Its Experimental Verification,”
-          <em>ASME Journal of Mechanisms and Robotics</em>, 2024.
-        </li>
-        <li>
-          <strong>Yun-Ho Han</strong> and Baek-Kyu Cho,
-          “Slope Walking of Humanoid Robot without IMU Sensor on an Unknown Slope,”
-          <em>Robotics and Autonomous Systems</em>, 2022.
-        </li>
-        <li>
-          <strong>Yun-Ho Han</strong> and Baek-Kyu Cho,
-          “Implementing Torque Control-Based Biped Walking of Humanoid Robots with High Reduction Gear and No Joint Torque Feedback,”
-          <em>IEEE-RAS International Conference on Humanoid Robots</em>, 2023.
-        </li>
-      </ol>
+      <div class="publication-groups">
+        <div class="publication-group">
+          <h3 data-i18n="pub_journal_title">Journal Papers</h3>
+          <ol class="publication-list">
+            <li>
+              <strong>Yun-Ho Han</strong>, Min-Ho Park, and Baek-Kyu Cho,
+              “ADAPT: Advanced Differential and Agile Parallel Transmission Mechanism for High-Performance Humanoid Robots,”
+              <em>IEEE Robotics and Automation Letters</em>, 2026.
+            </li>
+            <li>
+              Junyeon Namgung, <strong>Yun-Ho Han</strong>, and Baek-Kyu Cho,
+              “A Variable Stiffness Sole for Biped Robot and Its Experimental Verification,”
+              <em>ASME Journal of Mechanisms and Robotics</em>, 2024.
+            </li>
+            <li>
+              <strong>Yun-Ho Han</strong> and Baek-Kyu Cho,
+              “Slope Walking of Humanoid Robot without IMU Sensor on an Unknown Slope,”
+              <em>Robotics and Autonomous Systems</em>, 2022.
+            </li>
+            <li>
+              <strong>Yun-Ho Han</strong>, Ho-Jin Jeon, and Baek-Kyu Cho,
+              “Development of a Humanoid Robot for the 2018 Ski Robot Challenge,”
+              <em>International Journal of Precision Engineering and Manufacturing</em>, 2020.
+            </li>
+          </ol>
+        </div>
+
+        <div class="publication-group">
+          <h3 data-i18n="pub_conference_title">Conference Papers</h3>
+          <ol class="publication-list">
+            <li>
+              <strong>Yun-Ho Han</strong> and Baek-Kyu Cho,
+              “Implementing Torque Control-Based Biped Walking of Humanoid Robots with High Reduction Gear and No Joint Torque Feedback,”
+              <em>IEEE-RAS International Conference on Humanoid Robots</em>, 2023.
+            </li>
+            <li>
+              <strong>Yun-Ho Han</strong>, Junyeon Namgung, and Baek-Kyu Cho,
+              “Walking Control Framework on Uneven Terrain Using Variable Stiffness Sole,”
+              <em>IEEE/RSJ International Conference on Intelligent Robots and Systems</em>, 2022.
+            </li>
+          </ol>
+        </div>
+      </div>
       <p class="note">
         <a href="https://scholar.google.com/citations?user=bfGxfZUAAAAJ" target="_blank" rel="noopener" data-i18n="pub_more">Full publication list on Google Scholar</a>
       </p>
@@ -151,15 +172,33 @@
         <p class="eyebrow" data-i18n="demos_eyebrow">Videos</p>
         <h2 data-i18n="demos_title">Videos and Demonstrations</h2>
       </div>
-      <div class="demo-list">
-        <span data-i18n="demo_1">RoK-3 humanoid walking</span>
-        <span data-i18n="demo_2">RoK-4 real-world walking</span>
-        <span data-i18n="demo_3">RoK-4 full-mechanism MuJoCo simulation</span>
-        <span data-i18n="demo_4">ADAPT differential mechanism demonstration</span>
-        <span data-i18n="demo_5">Reinforcement learning-based humanoid walking</span>
-        <span data-i18n="demo_6">Single-leg jumping motion generation</span>
+      <div class="demo-grid">
+        <article class="demo-card">
+          <h3 data-i18n="demo_1">RoK-3 humanoid walking</h3>
+          <p data-i18n="demo_status">Media will be added later.</p>
+        </article>
+        <article class="demo-card">
+          <h3 data-i18n="demo_2">RoK-4 real-world walking</h3>
+          <p data-i18n="demo_status">Media will be added later.</p>
+        </article>
+        <article class="demo-card">
+          <h3 data-i18n="demo_3">RoK-4 full-mechanism MuJoCo simulation</h3>
+          <p data-i18n="demo_status">Media will be added later.</p>
+        </article>
+        <article class="demo-card">
+          <h3 data-i18n="demo_4">ADAPT differential mechanism demonstration</h3>
+          <p data-i18n="demo_status">Media will be added later.</p>
+        </article>
+        <article class="demo-card">
+          <h3 data-i18n="demo_5">Reinforcement learning-based humanoid walking</h3>
+          <p data-i18n="demo_status">Media will be added later.</p>
+        </article>
+        <article class="demo-card">
+          <h3 data-i18n="demo_6">Single-leg jumping motion generation</h3>
+          <p data-i18n="demo_status">Media will be added later.</p>
+        </article>
       </div>
-      <p class="muted" data-i18n="demos_note">Videos and images will be added later.</p>
+      <p class="muted" data-i18n="demos_note">Videos and images will be added later as research media becomes available.</p>
     </section>
 
     <section id="cv" class="section alt">
@@ -170,6 +209,11 @@
       <p data-i18n="cv_text">
         A PDF version of my CV is available below. A Korean CV will be added later.
       </p>
+      <div class="status-list" aria-label="CV availability">
+        <span data-i18n="cv_status_pdf">English PDF available</span>
+        <span data-i18n="cv_status_html">HTML CV available</span>
+        <span data-i18n="cv_status_kr">Korean CV coming soon</span>
+      </div>
       <div class="hero-actions">
         <a class="button primary" href="documents/Yunho_Han_CV_EN_v1_0.pdf" target="_blank" rel="noopener" data-i18n="cv_pdf">English CV PDF</a>
         <a class="button" href="cv.html" target="_blank" rel="noopener" data-i18n="cv_html">HTML CV</a>

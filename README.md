@@ -45,8 +45,8 @@ RoK-3 Humanoid Robot
 Current version:
 
 ```text
-Homepage version: v1.8
-CV version: English CV v1.0
+Homepage version: v2.2
+CV version: English CV v1.1
 ```
 
 Implemented:
@@ -54,13 +54,15 @@ Implemented:
 * Static GitHub Pages homepage
 * English/Korean language switching
 * English CV PDF linked from homepage
-* HTML CV page
+* HTML CV page with CDN contact icons
 * Research sections from RoK-3 to RoK-4
 * Publications section grouped by journal and conference papers
 * DOI buttons for homepage publications with confirmed DOI links
 * YouTube buttons for publication videos
 * Research projects section with project-level YouTube links
 * Videos and demonstrations section with available YouTube links
+* YouTube thumbnail previews in the Videos and Demonstrations section
+* CDN icon and text links for email, GitHub, LinkedIn, and Google Scholar
 * CV availability status labels
 * Contact links for email, GitHub, LinkedIn, and Google Scholar
 * `.nojekyll` marker file for GitHub Pages
@@ -79,6 +81,22 @@ To be added later:
 Update notes:
 
 ```text
+v2.2
+- Added CDN contact icons to the HTML CV page.
+- Updated the documented HTML CV status to English CV v1.1.
+
+v2.1
+- Replaced text-only social badges with CDN icons from Font Awesome and Academicons.
+- Kept text labels next to each icon for clarity and accessibility.
+
+v2.0
+- Added icon-style text links for Email, GitHub, LinkedIn, and Google Scholar in the hero and contact sections.
+- Increased the top navigation and Yun-Ho Han brand text size.
+
+v1.9
+- Added clickable YouTube thumbnail previews to the Videos and Demonstrations section.
+- Kept project and publication links as compact text buttons.
+
 v1.8
 - Reordered homepage sections to place Videos / Demos before Publications.
 - Added YouTube buttons to Research Projects cards for RoK-4, ADAPT, Model-Based Walking, RoK-3, and Single-Leg Jumping.
@@ -223,7 +241,7 @@ Project cards include YouTube buttons where project-level media links are availa
 
 ### Videos / Demos
 
-Shows YouTube buttons for available videos and keeps placeholder text for demo categories that do not yet have media links.
+Shows clickable YouTube thumbnail previews for available videos and keeps placeholder text for demo categories that do not yet have media links.
 
 Current demo categories:
 

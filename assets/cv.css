@@ -72,6 +72,27 @@ a:hover { text-decoration: underline; }
   color: var(--muted);
 }
 
+.contact div {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.contact-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 12px;
+  color: var(--accent);
+  font-size: 8.8px;
+  line-height: 1;
+  flex: 0 0 auto;
+}
+
+.contact-icon i {
+  line-height: 1;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 56mm 1fr;

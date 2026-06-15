@@ -45,7 +45,7 @@ RoK-3 Humanoid Robot
 Current version:
 
 ```text
-Homepage version: v1.3
+Homepage version: v1.6
 CV version: English CV v1.0
 ```
 
@@ -58,7 +58,7 @@ Implemented:
 * Research sections from RoK-3 to RoK-4
 * Structured selected publications section grouped by journal and conference papers
 * DOI buttons for selected homepage publications with confirmed DOI links
-* Video button for the ADAPT publication
+* YouTube buttons for selected publication videos
 * Selected research projects section
 * Videos and demonstrations placeholder card section
 * CV availability status labels
@@ -79,8 +79,18 @@ To be added later:
 Update notes:
 
 ```text
+v1.6
+- Added YouTube buttons to the Slope Walking and 2018 Ski Robot Challenge homepage publication entries.
+- Updated the IROS 2022 homepage publication YouTube link.
+
+v1.5
+- Added YouTube buttons to the Humanoids 2023 and IROS 2022 homepage publication entries.
+
+v1.4
+- Renamed the ADAPT publication Video button to YouTube.
+
 v1.3
-- Added a Video button to the ADAPT homepage publication entry.
+- Added a YouTube button to the ADAPT homepage publication entry.
 
 v1.2
 - Added DOI buttons to selected homepage publications with confirmed DOI links.

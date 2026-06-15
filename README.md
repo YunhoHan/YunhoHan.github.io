@@ -45,7 +45,7 @@ RoK-3 Humanoid Robot
 Current version:
 
 ```text
-Homepage version: v1.2
+Homepage version: v1.3
 CV version: English CV v1.0
 ```
 
@@ -58,6 +58,7 @@ Implemented:
 * Research sections from RoK-3 to RoK-4
 * Structured selected publications section grouped by journal and conference papers
 * DOI buttons for selected homepage publications with confirmed DOI links
+* Video button for the ADAPT publication
 * Selected research projects section
 * Videos and demonstrations placeholder card section
 * CV availability status labels
@@ -72,12 +73,15 @@ To be added later:
 * RoK-4 project images
 * ADAPT mechanism images
 * RL walking simulation images or GIFs
-* Video links or embedded demonstrations
-* More detailed publication buttons such as Paper / Video / Code / Project
+* More video links or embedded demonstrations
+* More detailed publication buttons such as Paper / Code / Project
 
 Update notes:
 
 ```text
+v1.3
+- Added a Video button to the ADAPT homepage publication entry.
+
 v1.2
 - Added DOI buttons to selected homepage publications with confirmed DOI links.
 - Added the IROS 2022 DOI to the HTML CV publication entry.

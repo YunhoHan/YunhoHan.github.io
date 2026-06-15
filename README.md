@@ -45,19 +45,26 @@ RoK-3 Humanoid Robot
 Current version:
 
 ```text
-Homepage version: v2.7
-CV version: English CV v1.1
-English CV PDF filename: Yunho_Han_CV_EN_v1_0.pdf
+Homepage version: v2.11
+CV versions: English CV v1.1 / Korean CV v1.0
+English CV PDF filename: Yunho_Han_CV_EN_v1_1.pdf
+Korean CV PDF filename: Yunho_Han_CV_KR_v1_0.pdf
 ```
 
-The English CV PDF keeps the `v1_0` filename to preserve stable homepage and GitHub Pages links, even when the CV content version is updated.
+The English and Korean CV PDF filenames match their CV content versions.
 
 Implemented:
 
 * Static GitHub Pages homepage
 * English/Korean language switching
+* Hero section with subtle RoK-3/RoK-4 robot background imagery
 * English CV PDF linked from homepage
 * HTML CV page with CDN contact icons
+* Korean HTML CV page
+* English CV PDF regenerated from the HTML CV page
+* English CV v1.1 label shown in the HTML/PDF CV footer
+* Korean CV PDF generated from the Korean HTML CV page
+* Korean CV v1.0 label shown in the HTML/PDF CV footer
 * Research sections from RoK-3 to RoK-4
 * RoK-3 and RoK-4 representative images in the Research Projects section
 * Publications section grouped by journal and conference papers
@@ -73,7 +80,6 @@ Implemented:
 
 To be added later:
 
-* Korean CV PDF
 * Profile photo
 * ADAPT mechanism images
 * RoK-4 simulation or learning-process media, if useful
@@ -83,6 +89,26 @@ To be added later:
 Update notes:
 
 ```text
+v2.11
+- Reduced the hero section height so the following About section is easier to discover on desktop.
+- Added subtle RoK-3 and RoK-4 robot imagery to the hero background.
+- Added a compact "Explore research" / "연구 살펴보기" cue linking to the About section.
+
+v2.10
+- Added a Korean HTML CV page at `cv_ko.html`.
+- Generated the Korean CV PDF as `Yunho_Han_CV_KR_v1_0.pdf`.
+- Updated the homepage CV section with English/Korean PDF and HTML CV buttons.
+- Updated README status so Korean CV is marked as available.
+
+v2.9
+- Renamed the English CV PDF file to `Yunho_Han_CV_EN_v1_1.pdf` so the filename matches English CV v1.1.
+- Updated homepage PDF links and README references to use the v1.1 PDF filename.
+- Added the English CV v1.1 label to the HTML/PDF CV footer.
+
+v2.8
+- Regenerated the English CV PDF from `cv.html` so the HTML and PDF versions match.
+- Rebuilt the PDF from the HTML CV page before the filename version cleanup.
+
 v2.7
 - Reorganized Research Projects into larger RoK-4 and RoK-3 framed groups.
 - Added RoK-3 project cards for Whole-Body and Model Predictive Control and Foot Design.
@@ -101,10 +127,6 @@ v2.5
 v2.4
 - Removed the standalone reinforcement learning demo placeholder from the Videos and Demonstrations section.
 - Kept learning-progress media as an optional future addition only when a clear training or policy-behavior video is available.
-
-v2.3
-- Clarified that the English CV PDF keeps the v1_0 filename for stable links while the CV content is v1.1.
-- Updated future video work to distinguish existing YouTube links from remaining media to add.
 
 v2.2
 - Added CDN contact icons to the HTML CV page.
@@ -151,7 +173,7 @@ v1.2
 v1.1
 - Added `.nojekyll` to match the documented GitHub Pages structure.
 - Grouped homepage publications into Journal Papers and Conference Papers.
-- Added CV availability labels for English PDF, HTML CV, and Korean CV coming soon.
+- Added initial CV availability labels for the homepage CV section.
 - Reworked the Videos / Demos placeholder into individual demo cards.
 ```
 
@@ -163,6 +185,7 @@ v1.1
 YunhoHan.github.io/
 ├── index.html
 ├── cv.html
+├── cv_ko.html
 ├── assets/
 │   ├── style.css
 │   ├── script.js
@@ -174,7 +197,8 @@ YunhoHan.github.io/
 │           ├── rok4-humanoid.png
 │           └── rok4-with-hammer.png
 ├── documents/
-│   └── Yunho_Han_CV_EN_v1_0.pdf
+│   ├── Yunho_Han_CV_EN_v1_1.pdf
+│   └── Yunho_Han_CV_KR_v1_0.pdf
 ├── README.md
 └── .nojekyll
 ```
@@ -202,7 +226,13 @@ Contains:
 cv.html
 ```
 
-HTML version of the CV.
+English HTML version of the CV.
+
+```text
+cv_ko.html
+```
+
+Korean HTML version of the CV.
 
 ```text
 assets/style.css
@@ -229,10 +259,16 @@ assets/images/
 Robot and project media used by the homepage.
 
 ```text
-documents/Yunho_Han_CV_EN_v1_0.pdf
+documents/Yunho_Han_CV_EN_v1_1.pdf
 ```
 
 English CV PDF linked from the homepage.
+
+```text
+documents/Yunho_Han_CV_KR_v1_0.pdf
+```
+
+Korean CV PDF linked from the homepage.
 
 ---
 
@@ -318,7 +354,7 @@ Links to:
 * English CV PDF
 * HTML CV
 
-The section also shows availability labels for the English PDF, HTML CV, and the planned Korean CV.
+The section also shows availability labels for English PDF, HTML CV, and Korean CV.
 
 ### Contact
 
@@ -477,16 +513,10 @@ Current status:
 English homepage text: available
 Korean homepage text: available
 English CV PDF: available
-Korean CV PDF: not yet available
+Korean CV PDF: available
+English HTML CV: available
+Korean HTML CV: available
 ```
-
-When a Korean CV is created later, add it to:
-
-```text
-documents/Yunho_Han_CV_KR_v1_0.pdf
-```
-
-Then update the CV section in `index.html`.
 
 ---
 
@@ -613,20 +643,16 @@ Future improvements:
 
 A Domestic Papers subsection may be added later if those papers should appear directly on the homepage.
 
-### 4. Add Korean CV
+### 4. Improve Korean CV When Needed
 
-Add:
+The Korean CV is now available as:
 
 ```text
+cv_ko.html
 documents/Yunho_Han_CV_KR_v1_0.pdf
 ```
 
-Then create two CV buttons:
-
-```text
-English CV PDF
-Korean CV PDF
-```
+Future Korean CV improvements may include terminology cleanup, additional Korean descriptions, or a revised `v1_1` release.
 
 ### 5. Improve Mobile Layout
 

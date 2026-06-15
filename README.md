@@ -45,7 +45,7 @@ RoK-3 Humanoid Robot
 Current version:
 
 ```text
-Homepage version: v1.6
+Homepage version: v1.8
 CV version: English CV v1.0
 ```
 
@@ -56,11 +56,11 @@ Implemented:
 * English CV PDF linked from homepage
 * HTML CV page
 * Research sections from RoK-3 to RoK-4
-* Structured selected publications section grouped by journal and conference papers
-* DOI buttons for selected homepage publications with confirmed DOI links
-* YouTube buttons for selected publication videos
-* Selected research projects section
-* Videos and demonstrations placeholder card section
+* Publications section grouped by journal and conference papers
+* DOI buttons for homepage publications with confirmed DOI links
+* YouTube buttons for publication videos
+* Research projects section with project-level YouTube links
+* Videos and demonstrations section with available YouTube links
 * CV availability status labels
 * Contact links for email, GitHub, LinkedIn, and Google Scholar
 * `.nojekyll` marker file for GitHub Pages
@@ -74,11 +74,20 @@ To be added later:
 * ADAPT mechanism images
 * RL walking simulation images or GIFs
 * More video links or embedded demonstrations
-* More detailed publication buttons such as Paper / Code / Project
+* More detailed publication buttons such as Code / Project
 
 Update notes:
 
 ```text
+v1.8
+- Reordered homepage sections to place Videos / Demos before Publications.
+- Added YouTube buttons to Research Projects cards for RoK-4, ADAPT, Model-Based Walking, RoK-3, and Single-Leg Jumping.
+- Added YouTube buttons to Videos / Demos cards where media links are available.
+
+v1.7
+- Renamed homepage project and publication headings to "Research Projects" and "Publications".
+- Simplified matching CV section headings.
+
 v1.6
 - Added YouTube buttons to the Slope Walking and 2018 Ski Robot Challenge homepage publication entries.
 - Updated the IROS 2022 homepage publication YouTube link.
@@ -93,7 +102,7 @@ v1.3
 - Added a YouTube button to the ADAPT homepage publication entry.
 
 v1.2
-- Added DOI buttons to selected homepage publications with confirmed DOI links.
+- Added DOI buttons to homepage publications with confirmed DOI links.
 - Added the IROS 2022 DOI to the HTML CV publication entry.
 
 v1.1
@@ -135,8 +144,8 @@ Contains:
 * About
 * Research
 * Projects
-* Publications
 * Videos / Demos
+* Publications
 * CV
 * Contact
 
@@ -181,8 +190,8 @@ Home
 About
 Research
 Projects
-Publications
 Videos / Demos
+Publications
 CV
 Contact
 ```
@@ -210,22 +219,13 @@ Current project cards:
 * RoK-3 Humanoid Robot
 * Single-Leg Jumping Motion Planning
 
-### Publications
-
-Shows selected publications grouped into:
-
-* Journal Papers
-* Conference Papers
-
-Also links to the full publication list on Google Scholar.
-
-DOI buttons are shown for selected publications where DOI links are confirmed in the CV.
+Project cards include YouTube buttons where project-level media links are available.
 
 ### Videos / Demos
 
-Placeholder card section for future videos and demonstrations.
+Shows YouTube buttons for available videos and keeps placeholder text for demo categories that do not yet have media links.
 
-Planned demo categories:
+Current demo categories:
 
 * RoK-3 humanoid walking
 * RoK-4 real-world walking
@@ -233,6 +233,17 @@ Planned demo categories:
 * ADAPT differential mechanism demonstration
 * Reinforcement learning-based humanoid walking
 * Single-leg jumping motion generation
+
+### Publications
+
+Shows publications grouped into:
+
+* Journal Papers
+* Conference Papers
+
+Also links to the full publication list on Google Scholar.
+
+DOI and YouTube buttons are shown where links are available.
 
 ### CV
 
@@ -262,11 +273,11 @@ The current English CV includes:
 * Research Interests
 * Education
 * Research Experience
-* Selected Research Projects
+* Research Projects
 * Publications
 * Awards and Honors
 * Technical Skills
-* Selected Demonstrations
+* Demonstrations
 * References
 
 Important CV decisions:
@@ -518,7 +529,7 @@ Conference Papers
 Future improvements:
 
 ```text
-[Paper] [Video] [Code] [Project]
+[Code] [Project]
 ```
 
 A Domestic Papers subsection may be added later if those papers should appear directly on the homepage.

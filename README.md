@@ -45,9 +45,12 @@ RoK-3 Humanoid Robot
 Current version:
 
 ```text
-Homepage version: v2.2
+Homepage version: v2.7
 CV version: English CV v1.1
+English CV PDF filename: Yunho_Han_CV_EN_v1_0.pdf
 ```
+
+The English CV PDF keeps the `v1_0` filename to preserve stable homepage and GitHub Pages links, even when the CV content version is updated.
 
 Implemented:
 
@@ -56,11 +59,12 @@ Implemented:
 * English CV PDF linked from homepage
 * HTML CV page with CDN contact icons
 * Research sections from RoK-3 to RoK-4
+* RoK-3 and RoK-4 representative images in the Research Projects section
 * Publications section grouped by journal and conference papers
 * DOI buttons for homepage publications with confirmed DOI links
 * YouTube buttons for publication videos
-* Research projects section with project-level YouTube links
-* Videos and demonstrations section with available YouTube links
+* Research projects section grouped by RoK-4 and RoK-3
+* Videos and demonstrations section grouped by RoK-4 and RoK-3, with side-by-side desktop layout
 * YouTube thumbnail previews in the Videos and Demonstrations section
 * CDN icon and text links for email, GitHub, LinkedIn, and Google Scholar
 * CV availability status labels
@@ -71,16 +75,37 @@ To be added later:
 
 * Korean CV PDF
 * Profile photo
-* RoK-3 project images
-* RoK-4 project images
 * ADAPT mechanism images
-* RL walking simulation images or GIFs
-* More video links or embedded demonstrations
+* RoK-4 simulation or learning-process media, if useful
+* More video links, thumbnails, or embedded demonstrations
 * More detailed publication buttons such as Code / Project
 
 Update notes:
 
 ```text
+v2.7
+- Reorganized Research Projects into larger RoK-4 and RoK-3 framed groups.
+- Added RoK-3 project cards for Whole-Body and Model Predictive Control and Foot Design.
+- Updated Videos and Demonstrations to use a RoK-4 1-column group and RoK-3 2-column thumbnail group on desktop.
+
+v2.6
+- Added representative RoK-3 and RoK-4 images to the Research Projects section.
+- Added an `assets/images/` folder structure for robot media.
+- Renamed uploaded image files to web-friendly lowercase filenames without spaces.
+
+v2.5
+- Grouped the Videos and Demonstrations section into larger RoK-4 and RoK-3 framed blocks.
+- Renamed the RoK-4 walking demo to "RoK-4 RL-based real-world walking".
+- Replaced generic RoK-3 video labels with the original YouTube video titles.
+
+v2.4
+- Removed the standalone reinforcement learning demo placeholder from the Videos and Demonstrations section.
+- Kept learning-progress media as an optional future addition only when a clear training or policy-behavior video is available.
+
+v2.3
+- Clarified that the English CV PDF keeps the v1_0 filename for stable links while the CV content is v1.1.
+- Updated future video work to distinguish existing YouTube links from remaining media to add.
+
 v2.2
 - Added CDN contact icons to the HTML CV page.
 - Updated the documented HTML CV status to English CV v1.1.
@@ -141,7 +166,13 @@ YunhoHan.github.io/
 ├── assets/
 │   ├── style.css
 │   ├── script.js
-│   └── cv.css
+│   ├── cv.css
+│   └── images/
+│       ├── rok3/
+│       │   └── rok3-biped-and-humanoid.png
+│       └── rok4/
+│           ├── rok4-humanoid.png
+│           └── rok4-with-hammer.png
 ├── documents/
 │   └── Yunho_Han_CV_EN_v1_0.pdf
 ├── README.md
@@ -192,6 +223,12 @@ assets/cv.css
 CV page styling.
 
 ```text
+assets/images/
+```
+
+Robot and project media used by the homepage.
+
+```text
 documents/Yunho_Han_CV_EN_v1_0.pdf
 ```
 
@@ -228,29 +265,40 @@ Lists core research interests.
 
 ### Projects
 
-Current project cards:
+Current project groups:
+
+RoK-4:
 
 * RoK-4 Humanoid Robot
-* ADAPT Differential Mechanism
 * Mechanism-Aware RL Walking
-* Model-Based Humanoid Walking
-* RoK-3 Humanoid Robot
+* ADAPT Differential Mechanism
 * Single-Leg Jumping Motion Planning
 
-Project cards include YouTube buttons where project-level media links are available.
+RoK-3:
+
+* RoK-3 Humanoid Robot
+* Model-Based Humanoid Walking
+* Whole-Body and Model Predictive Control
+* Foot Design
+
+Project cards include YouTube and DOI buttons where project-level media links are available. The RoK-3 and RoK-4 platform cards also include representative robot images.
 
 ### Videos / Demos
 
-Shows clickable YouTube thumbnail previews for available videos and keeps placeholder text for demo categories that do not yet have media links.
+Shows clickable YouTube thumbnail previews for available videos and organizes them by robot platform. On desktop, RoK-4 appears as a 1-column group and RoK-3 appears as a 2-column thumbnail group.
 
-Current demo categories:
+Current demo groups:
 
-* RoK-3 humanoid walking
-* RoK-4 real-world walking
+RoK-4:
+
+* RoK-4 RL-based real-world walking
 * RoK-4 full-mechanism MuJoCo simulation
 * ADAPT differential mechanism demonstration
-* Reinforcement learning-based humanoid walking
 * Single-leg jumping motion generation
+
+RoK-3:
+
+* 8 YouTube thumbnail previews using the original video titles
 
 ### Publications
 
@@ -498,42 +546,55 @@ GitHub Pages will automatically update after the push.
 
 ## Recommended Future Work
 
-### 1. Add Images
+### 1. Add More Images
 
-Recommended image files:
+Already added:
 
 ```text
-assets/profile.jpg
-assets/rok3.jpg
-assets/rok4.jpg
-assets/adapt.jpg
-assets/rl_walking.jpg
-assets/jumping.jpg
+assets/images/rok3/rok3-biped-and-humanoid.png
+assets/images/rok4/rok4-humanoid.png
+assets/images/rok4/rok4-with-hammer.png
+```
+
+Still useful to add later:
+
+```text
+assets/images/profile/profile.jpg
+assets/images/adapt/adapt-mechanism.jpg
+assets/images/rok4/rok4-mujoco.jpg
+assets/images/jumping/single-leg-jumping.jpg
 ```
 
 Suggested use:
 
 * Hero section: RoK-4 representative image
-* Project cards: RoK-3, RoK-4, ADAPT, RL walking, jumping images
+* Project cards: ADAPT and jumping images
 * Videos section: thumbnails or GIFs
 
-### 2. Add Videos
+### 2. Add More Videos or Embeds
 
-Possible formats:
+Already linked:
+
+* RoK-3 humanoid walking videos
+* RoK-4 RL-based real-world walking
+* ADAPT mechanism demonstration
+* Model-based humanoid walking / torque-control-based walking
+* Slope walking
+* 2018 Ski Robot Challenge
+* Single-leg jumping motion
+* Publication videos where available
+
+Still to add:
+
+* RoK-4 full-mechanism MuJoCo simulation
+* Optional learning-progress clips, if they clearly show training or policy behavior
+
+Possible future formats:
 
 * YouTube links
 * Embedded videos
 * GIF thumbnails
 * Local MP4 files, if file size is acceptable
-
-Recommended demo items:
-
-* RoK-3 humanoid walking
-* RoK-4 real-world walking
-* RoK-4 full-mechanism MuJoCo simulation
-* ADAPT mechanism demonstration
-* Mechanism-aware reinforcement learning walking
-* Single-leg jumping motion
 
 ### 3. Add Additional Publication Action Buttons
 

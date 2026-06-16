@@ -45,7 +45,7 @@ RoK-3 Humanoid Robot
 Current version:
 
 ```text
-Homepage version: v2.11
+Homepage version: v2.12
 CV versions: English CV v1.1 / Korean CV v1.0
 English CV PDF filename: Yunho_Han_CV_EN_v1_1.pdf
 Korean CV PDF filename: Yunho_Han_CV_KR_v1_0.pdf
@@ -66,11 +66,11 @@ Implemented:
 * Korean CV PDF generated from the Korean HTML CV page
 * Korean CV v1.0 label shown in the HTML/PDF CV footer
 * Research sections from RoK-3 to RoK-4
-* RoK-3 and RoK-4 representative images in the Research Projects section
+* Separate RoK-3 and RoK-4 representative image cards in the Research Projects section
 * Publications section grouped by journal and conference papers
 * DOI buttons for homepage publications with confirmed DOI links
 * YouTube buttons for publication videos
-* Research projects section grouped by RoK-4 and RoK-3
+* Research projects section grouped by RoK-4 and RoK-3 without video buttons
 * Videos and demonstrations section grouped by RoK-4 and RoK-3, with side-by-side desktop layout
 * YouTube thumbnail previews in the Videos and Demonstrations section
 * CDN icon and text links for email, GitHub, LinkedIn, and Google Scholar
@@ -82,13 +82,17 @@ To be added later:
 
 * Profile photo
 * ADAPT mechanism images
-* RoK-4 simulation or learning-process media, if useful
 * More video links, thumbnails, or embedded demonstrations
 * More detailed publication buttons such as Code / Project
 
 Update notes:
 
 ```text
+v2.12
+- Added the RoK-4 full-mechanism MuJoCo simulation YouTube link to Videos and Demonstrations.
+- Removed video and DOI action buttons from Research Projects so media links stay in the demo/publication sections.
+- Split RoK-3 and RoK-4 representative images into standalone project image cards.
+
 v2.11
 - Reduced the hero section height so the following About section is easier to discover on desktop.
 - Added subtle RoK-3 and RoK-4 robot imagery to the hero background.
@@ -305,6 +309,7 @@ Current project groups:
 
 RoK-4:
 
+* RoK-4 image card
 * RoK-4 Humanoid Robot
 * Mechanism-Aware RL Walking
 * ADAPT Differential Mechanism
@@ -312,12 +317,13 @@ RoK-4:
 
 RoK-3:
 
+* RoK-3 image card
 * RoK-3 Humanoid Robot
 * Model-Based Humanoid Walking
 * Whole-Body and Model Predictive Control
 * Foot Design
 
-Project cards include YouTube and DOI buttons where project-level media links are available. The RoK-3 and RoK-4 platform cards also include representative robot images.
+Project cards describe the research only. Video links are kept in the Videos / Demos section, and DOI links are kept in the Publications section.
 
 ### Videos / Demos
 
@@ -607,6 +613,7 @@ Already linked:
 
 * RoK-3 humanoid walking videos
 * RoK-4 RL-based real-world walking
+* RoK-4 full-mechanism MuJoCo simulation
 * ADAPT mechanism demonstration
 * Model-based humanoid walking / torque-control-based walking
 * Slope walking
@@ -616,7 +623,6 @@ Already linked:
 
 Still to add:
 
-* RoK-4 full-mechanism MuJoCo simulation
 * Optional learning-progress clips, if they clearly show training or policy behavior
 
 Possible future formats:

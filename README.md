@@ -45,7 +45,7 @@ RoK-3 Humanoid Robot
 Current version:
 
 ```text
-Homepage version: v2.13
+Homepage version: v2.14
 CV versions: English CV v1.1 / Korean CV v1.0
 English CV PDF filename: Yunho_Han_CV_EN_v1_1.pdf
 Korean CV PDF filename: Yunho_Han_CV_KR_v1_0.pdf
@@ -88,6 +88,9 @@ To be added later:
 Update notes:
 
 ```text
+v2.14
+- Adjusted the hero portrait layout so the full introductory text block sits beside the profile image.
+
 v2.13
 - Added a profile portrait to the homepage hero section using `assets/images/profile/yunho-han.jpg`.
 

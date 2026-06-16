@@ -140,6 +140,22 @@ a {
   max-width: 880px;
 }
 
+.hero-profile {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.hero-profile img {
+  width: 118px;
+  height: 142px;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--panel);
+  box-shadow: 0 18px 48px rgba(15, 23, 42, 0.12);
+}
+
 .hero-visual {
   position: absolute;
   inset: 0;
@@ -743,6 +759,17 @@ h3 {
 
   h2 {
     font-size: 2.2rem;
+  }
+
+  .hero-profile {
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .hero-profile img {
+    width: 82px;
+    height: 98px;
+    border-radius: 14px;
   }
 
   .two-column,

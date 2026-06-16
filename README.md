@@ -45,7 +45,7 @@ RoK-3 Humanoid Robot
 Current version:
 
 ```text
-Homepage version: v2.12
+Homepage version: v2.13
 CV versions: English CV v1.1 / Korean CV v1.0
 English CV PDF filename: Yunho_Han_CV_EN_v1_1.pdf
 Korean CV PDF filename: Yunho_Han_CV_KR_v1_0.pdf
@@ -58,6 +58,7 @@ Implemented:
 * Static GitHub Pages homepage
 * English/Korean language switching
 * Hero section with subtle RoK-3/RoK-4 robot background imagery
+* Profile portrait in the hero section
 * English CV PDF linked from homepage
 * HTML CV page with CDN contact icons
 * Korean HTML CV page
@@ -80,7 +81,6 @@ Implemented:
 
 To be added later:
 
-* Profile photo
 * ADAPT mechanism images
 * More video links, thumbnails, or embedded demonstrations
 * More detailed publication buttons such as Code / Project
@@ -88,6 +88,9 @@ To be added later:
 Update notes:
 
 ```text
+v2.13
+- Added a profile portrait to the homepage hero section using `assets/images/profile/yunho-han.jpg`.
+
 v2.12
 - Added the RoK-4 full-mechanism MuJoCo simulation YouTube link to Videos and Demonstrations.
 - Removed video and DOI action buttons from Research Projects so media links stay in the demo/publication sections.
@@ -195,6 +198,8 @@ YunhoHan.github.io/
 │   ├── script.js
 │   ├── cv.css
 │   └── images/
+│       ├── profile/
+│       │   └── yunho-han.jpg
 │       ├── rok3/
 │       │   └── rok3-biped-and-humanoid.png
 │       └── rok4/
@@ -590,12 +595,12 @@ Already added:
 assets/images/rok3/rok3-biped-and-humanoid.png
 assets/images/rok4/rok4-humanoid.png
 assets/images/rok4/rok4-with-hammer.png
+assets/images/profile/yunho-han.jpg
 ```
 
 Still useful to add later:
 
 ```text
-assets/images/profile/profile.jpg
 assets/images/adapt/adapt-mechanism.jpg
 assets/images/rok4/rok4-mujoco.jpg
 assets/images/jumping/single-leg-jumping.jpg

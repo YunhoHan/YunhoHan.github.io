@@ -45,7 +45,7 @@ RoK-3 Humanoid Robot
 Current version:
 
 ```text
-Homepage version: v2.16
+Homepage version: v2.17
 CV versions: English CV v1.1 / Korean CV v1.0
 English CV PDF filename: Yunho_Han_CV_EN_v1_1.pdf
 Korean CV PDF filename: Yunho_Han_CV_KR_v1_0.pdf
@@ -88,6 +88,9 @@ To be added later:
 Update notes:
 
 ```text
+v2.17
+- Replaced the RoK-4 RL-based real-world walking link and thumbnail with the updated YouTube video.
+
 v2.16
 - Restored the compact hero portrait layout so the profile photo and name sit side by side, with the introductory text below.
 
